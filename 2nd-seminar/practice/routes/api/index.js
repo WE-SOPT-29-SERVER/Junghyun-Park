@@ -10,4 +10,7 @@ router.get("/", (req, res) => {
     res.status(200).send(result);
 });
 
+router.use("/blog", require("./blog"));
+router.use("/users", require("./users"));
+
 module.exports = router;
