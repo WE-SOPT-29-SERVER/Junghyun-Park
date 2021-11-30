@@ -15,4 +15,18 @@ module.exports = {
 
     // 프로필 조회
     READ_PROFILE_SUCCESS: "프로필 조회 성공",
+
+    // 게시글 조회
+    READ_ALLPOSTING_SUCCESS: "모든 게시글 조회 성공",
+    READ_POSTING_SUCCESS: "게시글 조회 성공",
+    NO_POSTING: "게시글이 존재하지 않습니다.",
+
+    // 게시글 수정
+    MODIFY_POST_SUCCESS: "게시글 수정 성공",
+
+    // 게시글 생성
+    CREATED_POST_SUCCESS: "게시글 작성 성공",
+
+    // 게시글 삭제
+    DELETE_POST_SUCCESS: "게시글 삭제 성공",
 };

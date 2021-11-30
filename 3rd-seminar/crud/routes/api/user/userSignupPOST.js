@@ -1,9 +1,9 @@
 // 폴더명 + 라우트명 + 메서드명
-const responseMessage = require("../constants/responseMessage");
-const statusCode = require("../constants/statusCode");
+const responseMessage = require("../../../constants/responseMessage");
+const statusCode = require("../../../constants/statusCode");
 
-const util = require("../lib/util");
-const users = require("./../dbMockup/user");
+const util = require("../../../lib/util");
+const users = require("../../../dbMockup/user");
 
 //  /user/signup 요청을 여기서 핸들링
 //              여기는 path    여기는 로직
