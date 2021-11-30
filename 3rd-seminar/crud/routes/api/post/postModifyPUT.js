@@ -5,7 +5,7 @@ const util = require("../../../lib/util");
 const posts = require("../../../dbMockup/post");
 
 module.exports = async(req,res) => {
-    const id = req.params;
+    const { id } = req.params;
     const { title, text } = req.body;
 
     if(!id || !title || !text){
@@ -27,8 +27,8 @@ module.exports = async(req,res) => {
     }
 
     // 게시글을 수정하는 프로세스..
-    const newPost = { };
+    const updatedPost = { };
 
-    res.status(statusCode.OK).send(util.success(statusCode.OK, responseMessage.MODIFY_POST_SUCCESS, newPost));
+    res.status(statusCode.OK).send(util.success(statusCode.OK, responseMessage.MODIFY_POST_SUCCESS, updatedPost));
 
 }
